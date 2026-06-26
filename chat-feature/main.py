@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List, Optional
-import models
+import model.models as models
 import schemas
 from database import SessionLocal, engine
 from auth import get_current_user, create_access_token, get_password_hash, verify_password
